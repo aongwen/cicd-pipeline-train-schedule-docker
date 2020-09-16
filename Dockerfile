@@ -1,6 +1,6 @@
-FROM nodejs:carbon
+FROM node:carbon
 WORKDIR usr/src/app
-COPY package*.json /.
+COPY package*.json ./
 RUN npm install
 COPY . .
 EXPOSE 8080
